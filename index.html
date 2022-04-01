@@ -7,76 +7,100 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cheech's Pizza Parlor | Home</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<body>
-                <!-- --- HEADER & NAV --- -->
-    <!-- #region Header-->
-    <header> <!-- Insert <img> of Business logo --> </header>
+        <title>Cheech's Pizza Parlor | Home</title>
 
-    <!-- Nav - Flex Row -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="order.html">Order</a></li>
-        </ul>
-    </nav>
-    <!-- #endregion -->
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    </head>
 
-                <!-- --- MAIN BODY  --- -->
-    <!-- #region Main Body -->
+    <body>
+        <section id="EntireBody">
 
-    <div>
-        <h1>Cheech's Pizza Parlor</h1>
+                        <!-- --- HEADER & NAV --- -->
+            <!-- #region Header-->
+            <div id="Header">
+                <header> <a href="index.html"> <img id="BannerLogo" src="PizzaBanner.png" alt="Pizza Parlor Logo"> </a> </header>
 
-        <!-- Section #1 - Flex Row-->
-        <p></p>
-        <img>
+                <!-- Nav - Flex Row -->
+                <nav>
+                    <ul id="HeaderNav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="order.html">Order</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- #endregion -->
 
-        <!-- Section #2 - Flex Row-->
-        <div>
-            <!-- subsection #1 - flex row -->
-            <img>
-            <p></p>
-        </div>
-        
-        <div>
-            <!--subsection #2 - flex row-->
-            <p></p>
-            <!--Insert Google Maps here -->
-        </div>
-    </div>
+                        <!-- --- MAIN BODY ---    -->
+            <!-- #region Main Body -->
 
-    <!-- #endregion -->
+            <div>
+                <h1>Cheech's Pizza Parlor</h1>
 
-                <!-- --- FOOTER --- -->
-    <!-- #region Footer-->
-    <footer>
-        <!-- Section #1 - Flex Row -->
-        <div>
-            <!-- subsection #1 - flex row -->
-            <!-- Insert Social Icons -->
-            <a></a>
-            <a></a>
-            <a></a>
-            <p>Cheech's Pizza Parlor | 123-456-7890 | Pizza Parlor ln., Springfield Mo, 65584</p>
-        </div>
+                <div id="MainContent">
+                    <!-- Section #1 - Flex Row-->
+                    <div id="BodySectionOne">
+                        <div id="SubsectionColumnOne">
+                            <p>
+                                Cheech's Pizza Parlor has been serving the Springfield community for over 20 years now. With proud customer service, high quality pizza, and great family values.
+                                Using only the best of ingredients from local farms, and our brick pizza oven, we serve the best pizzas in springfield.
+                                From the Classic Cheese pizza to BBQ Chicken pizza, we serve original Italian style pizza by the slice that will not disappoint!
+                            </p>
+                            <p>
+                                We also now deliver in the local Downtown Springfield area! Call in to your favorite pizza resturant to see if delivery is avaliable to you!
+                            </p>
+                        </div>
+                        <img id="BodyImage" src="PizzaOven.jpg" alt="Pizza Oven">
+                    </div>
 
-        <!-- Footer Nav - Flex Row -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="order.html">Order</a></li>
-            </ul>
-        </nav>
-    </footer>
-</body>
+                    <!-- Section #2 - Flex Row-->
+                    <div id="BodySectionTwo">
+                        <div id="SubsectionRowOne">
+                            <!-- subsection #1 - flex row -->
+                            <img id="BodyImageTwo" src="PizzaChef.jpg" alt="Pizza Chef">
+                            <p>
+                                Our team of cooks and chefs ensure that highest quality food is brought to your table and home.
+                                With our family coming to America from Italy and starting our resturant here in Springfield, we're able to provide our community with original great tasting pizzas!
+                            </p>
+                        </div>
+
+                        <!-- Insert Google Maps-->
+                        <img id="Maps" src="PizzaLocation.PNG" alt="Google Maps">
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- #endregion -->
+
+                        <!-- --- FOOTER --- -->
+            <!-- #region Footer-->
+            <footer>
+                <!-- Footer Nav - Flex Row -->
+                <nav id="FooterNavOne">
+                    <div>
+                        <!-- subsection #1 - flex row -->
+                        <!-- Insert Social Icons -->
+                        <a></a>
+                        <a></a>
+                        <a></a>
+                        <p>Cheech's Pizza Parlor | 123-456-7890 | Pizza Parlor ln., Springfield Mo, 65584</p>
+                    </div>
+                    <ul id="FooterNavTwo">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="order.html">Order</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </section>
+    </body>
 </html>
