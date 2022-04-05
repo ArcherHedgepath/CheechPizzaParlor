@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Cheech's Pizza Parlor | Home</title>
+
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <section id="EntireBody">
+                        <!-- --- HEADER & NAV --- -->
+            <!-- #region Header-->
+            <div id="Header">
+                <header> <a href="index.html"> <img id="BannerLogo" src="PizzaBanner.png" alt="Pizza Parlor Logo"> </a> </header>
+
+                <!-- Nav - Flex Row -->
+                <nav>
+                    <ul id="HeaderNav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="order.html">Order</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- #endregion -->
+
+            <!-- ORDER FORM -->
+            <div id="MainContentOrder">
+                
+                <div id="MoreOrderForm">
+                    <form action="/action_page.php">
+                        <div id="OrderForm">
+                            <h2>Order Pizza</h2>
+                            <label for="Name">Last Name</label>
+                            <input class="List" type="text" id="Name" name="Name" value=""> <br>
+
+                            <label for="PhoneNum">Phone Number</label>
+                            <input class="List" type="text" id="PhoneNum" name="PhoneNum" value=""> <br>
+
+                            <label for="Address">Address</label>
+                            <input class="List" type="text" id="Address" name="Address" value=""> <br>
+
+                            <div class="List" id="PizzaList">
+                                <label for="Pizza">Select a Pizza:</label>
+
+                                <select name="Pizza" id="Pizza">
+                                    <option value="Default"></option>
+                                    <option value="TheClassic">The Classic</option>
+                                    <option value="PepperoniPizza">Pepperoni Pizza</option>
+                                    <option value="MargheritaPizza">Margherita Pizza</option>
+                                    <option value="BBQChickenAndSausagePizza">BBQ Chicken And Sausage Pizza</option>
+                                    <option value="HawiianPizza">Hawiian Pizza</option>
+                                    <option value="DiavolaPizza">Diavola Pizza</option>
+                                    <option value="CheeseburgerPizza">Cheeseburger Pizza</option>
+                                    <option value="VeganPizza">Vegan Pizza</option>
+                                </select>
+                                <label for="Quantity">Qty: </label>
+                                <input type="number" id="Quantity" name="Quantity" min="0" max="5">
+                            </div>
+
+                            <div id="Buttons">
+                                <input class="OrderButton" type="submit" value="Add New Pizza">
+                                <input class="OrderButton" type="submit" value="Submit">
+                            </div>
+                        </div>
+                    </form>
+
+                    <div id="Testimony">
+                        <h2>Testimony</h2>
+                        <p style="background: #4c0911; box-shadow: 3px 5px black;
+                        border-radius: 4px;
+                        border: solid 1px black;">"Stopped in on a whim and had the most amazing pizza. Decently busy but got pizza in average time. Had a house salad with a specialty pizza, forget the name but I feel like all of them could be good. Cookies were not what I expected in that its gonna be hard to eat a different chocolate chip cookie, they were so good." - tomjB3647ZL</p>
+                    </div>
+                </div>
+            </div>
+
+
+                    <!-- --- FOOTER --- -->
+            <!-- #region Footer-->
+            <footer>
+                <!-- Footer Nav - Flex Row -->
+                <nav id="FooterNavOne">
+                    <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
+                        <!-- subsection #1 - flex row -->
+                        <!-- Insert Social Icons -->
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-google"></a>
+                        <p>Cheech's Pizza Parlor | 123-456-7890 | Pizza Parlor ln., Springfield Mo, 65584</p>
+                    </div>
+                    <ul id="FooterNavTwo">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="order.html">Order</a></li>
+                    </ul>
+                </nav>
+            </footer>
+            <!-- #endregion -->
+        </section>
+    </body>
+</html>

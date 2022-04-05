@@ -37,10 +37,17 @@ li{
     font-family: 'Work Sans', sans-serif;
 }
 
+li:hover{
+    background: #8D818C;
+}
+
 a{
     margin: 0;
-    padding: 0;
     text-decoration: none;
+}
+
+a:hover{
+    opacity: .7;
 }
 
 img{
@@ -54,6 +61,7 @@ h1{
     font-weight: bold;
     font-size: 2em;
     padding: 5px;
+    
 }
 h2{
     text-align: center;
@@ -69,6 +77,19 @@ p{
     padding: 15px;
     letter-spacing: 1px;
     font-family: 'Work Sans', sans-serif;
+}
+
+label{
+    font-family: 'Work Sans', sans serif;
+    text-align: center;
+}
+
+input{
+    background: #8D818C;
+}
+
+select{
+    background: #8D818C;
 }
 /* #region HOME PAGE */
 
@@ -108,7 +129,7 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 80vh;
+    height: 100vh;
     padding-bottom: 2vh;
 }
 
@@ -125,7 +146,7 @@ p{
     flex-direction: column;
     justify-content: space-around;
     width: 40vw;
-
+    align-self: flex-start;
 }
 
 #BodySectionTwo{
@@ -133,6 +154,7 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding-bottom: 1.5em;
 }
 
 #SubsectionRowOne{
@@ -154,7 +176,8 @@ p{
     box-shadow: 3px 5px black;
     border-radius: 4px;
     border: solid 1px black;
-    max-height: 38vh;
+    height: 30vh;
+    align-self: flex-start;
 }
 
 #BodyImageTwo{
@@ -237,7 +260,7 @@ p{
 
 .MenuImage{
     width: 30vw;
-    height: 500px;
+    height: 40vh;
     box-shadow: 3px 5px black;
     border-radius: 4px;
     border: solid 1px black;
@@ -255,3 +278,147 @@ p{
     justify-content: space-around;
 }
 
+/*  --- #region FORM PAGE ---  */
+
+/* Form Classes */
+.List{
+    padding-bottom: .5em;
+}
+
+.OrderButton{
+    padding: 1.5em;
+    margin-right: 2em;
+    margin-bottom: 1.5em;
+}
+
+/* Form IDs */
+#MainContentOrder{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: space-around;
+    padding-bottom: 2vh;
+}
+
+#OrderForm{
+    display: flex;
+    flex-direction: column;
+    width: 55vw;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+}
+
+#PizzaList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    width: 35vw;
+}
+
+#Pizza{
+    display: flex;
+    flex-direction: row;
+    width: 35vw;
+}
+
+#Address{
+    width: 35vw;
+}
+
+#PhoneNum{
+    width: 35vw;
+}
+
+#Name{
+    width: 35vw;
+}
+
+#Buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+#MoreOrderForm{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#Testimony{
+    width: 35vw;
+}
+/* #endregion */
+
+
+/* --- MEDIA QUERIES --- */
+
+@media only screen and (max-width: 578px){
+    img{
+        display: flex;
+        justify-self: center;
+    }
+
+    #EntireBody{
+        width: 100vw;
+    }
+
+    .MenuImage{
+        width: 90vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .MenuText{
+        flex-direction: row;
+    }
+
+    #MenuGrid{
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-row-gap: 1em;
+        justify-content: space-around;
+    }
+
+    .MenuText{
+        display: flex;
+        width: 90vw;
+    }
+
+    #BodyImage{
+        width: 100vw;
+        box-shadow: 3px 5px black;
+        border-radius: 4px;
+        border: solid 1px black;
+        height: 30vh;
+        align-self: flex-start;
+    }
+
+    #OrderForm{
+        width: 75vw;
+    }
+
+    #PizzaList{
+        flex-direction: column;
+    }
+
+    #Buttons{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding-left: 30px;
+    }
+
+    #Testimony{
+        width: 100vw;
+    }
+
+    form{
+        margin-left: 15vw;
+    }
+
+
+}
